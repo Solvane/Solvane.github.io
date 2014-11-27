@@ -1,0 +1,52 @@
+body { margin: 0; padding: 0; background: #000 url(../images/solvane-bg.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+h1, h2, p { margin: 0; padding: 0; }
+img { max-width: 100%; }
+hr { width: 6%; margin: 25px auto; border: 1px solid #fff;}
+
+ul { list-style: none; text-align: center; padding: 0; }
+li + li:before{ content: " • "; padding: 0 0.08em; }
+li, a, a:link, a:visited {color: #fff; text-decoration: none; display: inline-block; font: 12px "Raleway",sans-serif; color: #fff; letter-spacing: 0.08em;}
+a:hover {color: #D8D8D8;}
+
+#imprint {
+    position: fixed;
+    width: 250px;
+    bottom: 0;
+    right:25%;
+    left:50%;
+    margin-left:-125px;
+    padding:5px;
+    text-align: center;
+  }
+#imprint a {font: 10px "Raleway",sans-serif;}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.wrapper {
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+@media (max-width: 768px) {
+
+  .wrapper {
+    width:80%;
+    height:80%;
+  }
+
+	.container {
+  width: 100%;
+}
+
+	body {background: #000 url(../images/solvane-bg_small.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+
+	li + li:before{ content: none;}
+	li, a, a:link, a:visited {display: block; padding-bottom: 5px;}
+}
